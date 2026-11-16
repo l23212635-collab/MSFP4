@@ -148,16 +148,18 @@ Este mecanismo permite mantener regulada la concentración hormonal y evitar una
 
 Para estudiar el comportamiento dinámico del sistema se utiliza un circuito RLC. Cada componente eléctrico representa una propiedad simplificada del proceso fisiológico.
 
+
 | Símbolo | Equivalente eléctrico | Interpretación fisiológica |
 |---|---|---|
-| \(V_e(t)\) | Voltaje de entrada | Estímulo para la secreción hormonal |
-| \(F_e(t)\) | Corriente de entrada | Flujo de secreción y transporte hormonal |
-| \(R_1\) | Resistencia | Pérdidas y oposición durante el transporte hormonal |
-| \(C\) | Capacitancia | Acumulación temporal de hormona |
-| \(L\) | Inductancia | Retardo o inercia de la respuesta del tejido |
-| \(R_2\) | Resistencia | Utilización, disipación o eliminación de la señal hormonal |
-| \(F_s(t)\) | Corriente de salida | Flujo asociado a la respuesta del tejido |
-| \(V_s(t)\) | Voltaje de salida | Nivel hormonal efectivo disponible |
+| $V_e(t)$ | Voltaje de entrada | Estímulo para la secreción hormonal |
+| $F_e(t)$ | Corriente de entrada | Flujo de secreción y transporte hormonal |
+| $R_1$ | Resistencia | Pérdidas y oposición durante el transporte hormonal |
+| $C$ | Capacitancia | Acumulación temporal de hormona |
+| $L$ | Inductancia | Retardo o inercia de la respuesta del tejido |
+| $R_2$ | Resistencia | Utilización, disipación o eliminación de la señal hormonal |
+| $F_s(t)$ | Corriente de salida | Flujo asociado a la respuesta del tejido |
+| $V_s(t)$ | Voltaje de salida | Nivel hormonal efectivo disponible |
+
 
 La señal de entrada \(V_e(t)\) representa el estímulo que inicia la respuesta endocrina, mientras que la salida \(V_s(t)\) representa el nivel hormonal efectivo obtenido después de considerar la dinámica del modelo.
 
