@@ -167,12 +167,14 @@ La señal de entrada \(V_e(t)\) representa el estímulo que inicia la respuesta 
 
 El circuito considera los siguientes componentes eléctricos:
 
+
 | Parámetro | Caso control | Caso patológico | Unidad |
 |---|---:|---:|---|
-| \(R_1\) | 1 | 1 | kΩ |
-| \(L\) | 100 | 100 | mH |
-| \(C\) | 1 | 1000 | μF |
-| \(R_2\) | 100 | 1 | kΩ |
+| $R_1$ | 1 | 1 | kΩ |
+| $L$ | 100 | 100 | mH |
+| $C$ | 1 | 1000 | μF |
+| $R_2$ | 100 | 1 | kΩ |
+
 
 La diferencia entre las dos condiciones se representa mediante la modificación de la capacitancia y de la resistencia de salida.
 
@@ -193,14 +195,15 @@ Para obtener el modelo matemático se utiliza el circuito RLC equivalente del si
 
 Se consideran las siguientes relaciones eléctricas:
 
-- \(V_e(t)\): voltaje de entrada.
-- \(V_s(t)\): voltaje de salida.
-- \(I_1(t)\): corriente de entrada.
-- \(I_2(t)\): corriente de salida.
-- \(R_1\): resistencia de entrada.
-- \(R_2\): resistencia de salida.
-- \(L\): inductancia.
-- \(C\): capacitancia.
+- $V_e(t)$: voltaje de entrada.
+- $V_s(t)$: voltaje de salida.
+- $I_1(t)$: corriente de entrada.
+- $I_2(t)$: corriente de salida.
+- $R_1$: resistencia de entrada.
+- $R_2$: resistencia de salida.
+- $L$: inductancia.
+- $C$: capacitancia.
+
 
 Aplicando la ley de corrientes de Kirchhoff en el nodo principal:
 
@@ -229,16 +232,13 @@ $$
 Aplicando la ley de voltajes de Kirchhoff en la rama de entrada:
 
 $$
-V_e(t)=R_1I_1(t)+
-\frac{1}{C}\int[I_1(t)-I_2(t)]\,dt
+V_e(t)=R_1I_1(t)+\frac{1}{C}\int[I_1(t)-I_2(t)]\,dt
 $$
 
 Para la rama de salida:
 
 $$
-\frac{1}{C}\int[I_1(t)-I_2(t)]\,dt
-=
-L\frac{dI_2(t)}{dt}+R_2I_2(t)
+\frac{1}{C}\int[I_1(t)-I_2(t)]\,dt=L\frac{dI_2(t)}{dt}+R_2I_2(t)
 $$
 
 Estas ecuaciones describen el comportamiento eléctrico del circuito equivalente utilizado para representar el sistema endocrino.
@@ -250,39 +250,31 @@ La función de transferencia se obtiene mediante la transformada de Laplace, con
 A partir de las ecuaciones del circuito se obtiene:
 
 $$
-V_e(s)=
-R_1I_1(s)+
-\frac{I_1(s)-I_2(s)}{Cs}
+V_e(s)=R_1I_1(s)+\frac{I_1(s)-I_2(s)}{Cs}
 $$
 
 Para la rama de salida:
 
 $$
-\frac{I_1(s)-I_2(s)}{Cs}
-=
-(Ls+R_2)I_2(s)
+\frac{I_1(s)-I_2(s)}{Cs}=(Ls+R_2)I_2(s)
 $$
 
 Despejando la corriente de entrada:
 
 $$
-I_1(s)=
-[1+Cs(Ls+R_2)]I_2(s)
+I_1(s)=[1+Cs(Ls+R_2)]I_2(s)
 $$
 
 Sustituyendo en la ecuación de entrada:
 
 $$
-V_e(s)=
-R_1[1+Cs(Ls+R_2)]I_2(s)
-+(Ls+R_2)I_2(s)
+V_e(s)=R_1[1+Cs(Ls+R_2)]I_2(s)+(Ls+R_2)I_2(s)
 $$
 
 Agrupando términos:
 
 $$
-V_e(s)=
-[R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)]I_2(s)
+V_e(s)=[R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)]I_2(s)
 $$
 
 El voltaje de salida se expresa como:
@@ -295,22 +287,19 @@ Por lo tanto, la función de transferencia del sistema es:
 
 $$
 \boxed{
-G(s)=\frac{V_s(s)}{V_e(s)}
-=
-\frac{Ls+R_2}
-{R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)}
-}
+G(s)=\frac{V_s(s)}{V_e(s)}=\frac{Ls+R_2}{R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)}}
 $$
 
 Donde:
 
-- \(V_s(s)\): voltaje de salida del sistema.
-- \(V_e(s)\): voltaje de entrada.
-- \(R_1\): resistencia de entrada.
-- \(R_2\): resistencia de salida.
-- \(L\): inductancia.
-- \(C\): capacitancia.
-- \(s\): variable compleja del dominio de Laplace.
+
+- $V_s(s)$: voltaje de salida del sistema.
+- $V_e(s)$: voltaje de entrada.
+- $R_1$: resistencia de entrada.
+- $R_2$: resistencia de salida.
+- $L$: inductancia.
+- $C$: capacitancia.
+- $s$: variable compleja del dominio de Laplace.
 
 Esta función de transferencia representa la relación entre el estímulo aplicado y la respuesta hormonal equivalente del sistema.
 
@@ -319,30 +308,20 @@ Esta función de transferencia representa la relación entre el estímulo aplica
 Partiendo de la función de transferencia:
 
 $$
-\frac{V_s(s)}{V_e(s)}
-=
-\frac{Ls+R_2}
-{R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)}
+\frac{V_s(s)}{V_e(s)}=\frac{Ls+R_2}{R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)}
 $$
 
 Se realiza el producto cruzado:
 
 $$
-[R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)]V_s(s)
-=
-(Ls+R_2)V_e(s)
+[R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)]V_s(s)=(Ls+R_2)V_e(s)
 $$
 
 Aplicando la transformada inversa de Laplace, considerando condiciones iniciales nulas, se obtiene:
 
 $$
 \boxed{
-R_1LC\frac{d^2V_s(t)}{dt^2}
-+(L+R_1R_2C)\frac{dV_s(t)}{dt}
-+(R_1+R_2)V_s(t)
-=
-L\frac{dV_e(t)}{dt}+R_2V_e(t)
-}
+R_1LC\frac{d^2V_s(t)}{dt^2}+(L+R_1R_2C)\frac{dV_s(t)}{dt}+(R_1+R_2)V_s(t)=L\frac{dV_e(t)}{dt}+R_2V_e(t)}
 $$
 
 Esta ecuación diferencial ordinaria describe la relación dinámica entre la señal de entrada y la señal de salida del sistema endocrino.
@@ -369,21 +348,14 @@ La primera ecuación de estado es:
 
 $$
 \boxed{
-\dot{x}_1(t)=
-\frac{1}{C}
-\left[
-\frac{V_e(t)-x_1(t)}{R_1}-x_2(t)
-\right]
-}
+\dot{x}_1(t)=\frac{1}{C}\left[\frac{V_e(t)-x_1(t)}{R_1}-x_2(t)\right]}
 $$
 
 La segunda ecuación de estado es:
 
 $$
 \boxed{
-\dot{x}_2(t)=
-\frac{x_1(t)-R_2x_2(t)}{L}
-}
+\dot{x}_2(t)=\frac{x_1(t)-R_2x_2(t)}{L}}
 $$
 
 La salida del sistema se obtiene mediante:
@@ -442,9 +414,7 @@ $$
 Sustituyendo la entrada escalón:
 
 $$
-e_{ss}=
-\lim_{s\to0}
-s[1-G(s)]\frac{1}{s}
+e_{ss}=\lim_{s\to0}s[1-G(s)]\frac{1}{s}
 $$
 
 Por lo tanto:
@@ -463,8 +433,7 @@ Finalmente:
 
 $$
 \boxed{
-e_{ss}=\frac{R_1}{R_1+R_2}
-}
+e_{ss}=\frac{R_1}{R_1+R_2}}
 $$
 
 **Caso control:**
@@ -525,12 +494,7 @@ Aplicando la fórmula general:
 
 $$
 \boxed{
-s_{1,2}=
-\frac{-(L+R_1R_2C)
-\pm
-\sqrt{(L+R_1R_2C)^2-4R_1LC(R_1+R_2)}}
-{2R_1LC}
-}
+s_{1,2}=\frac{-(L+R_1R_2C)\pm\sqrt{(L+R_1R_2C)^2-4R_1LC(R_1+R_2)}}{2R_1LC}}
 $$
 
 Los polos permiten identificar la estabilidad y el comportamiento transitorio del sistema.
@@ -539,10 +503,11 @@ Los polos permiten identificar la estabilidad y el comportamiento transitorio de
 
 Los parámetros utilizados son:
 
-- \(R_1=1\,k\Omega\)
-- \(R_2=100\,k\Omega\)
-- \(L=100\,mH\)
-- \(C=1\,\mu F\)
+- $R_1 = 1\,k\Omega$
+- $R_2 = 100\,k\Omega$
+- $L = 100\,mH$
+- $C = 1\,\mu F$
+
 
 Los polos aproximados son:
 
@@ -560,10 +525,12 @@ Ambos polos son reales y negativos, por lo que el sistema es estable y presenta 
 
 Los parámetros utilizados son:
 
-- \(R_1=1\,k\Omega\)
-- \(R_2=1\,k\Omega\)
-- \(L=100\,mH\)
-- \(C=1000\,\mu F\)
+
+- $R_1 = 1\,k\Omega$
+- $R_2 = 1\,k\Omega$
+- $L = 100\,mH$
+- $C = 1000\,\mu F$
+
 
 Los polos aproximados son:
 
@@ -760,21 +727,25 @@ También se contempla la construcción del circuito equivalente mediante compone
 
 La configuración de referencia utilizada en el modelo contempla:
 
+
 | Parámetro | Configuración |
 |---|---|
 | Tiempo de simulación | 10 s |
 | Solver | `ode15s` |
-| Paso máximo | \(1\times10^{-3}\) s |
+| Paso máximo | $1\times10^{-3}$ s |
 | Condición inicial | Cero |
+
 
 Debido a las diferencias entre las escalas temporales de los polos, se debe verificar que el paso de simulación permita representar adecuadamente la respuesta del circuito.
 
 ### 8.5. Señales que deben registrarse
 
-1. Señal de entrada \(V_e(t)\).
+
+1. Señal de entrada $V_e(t)$.
 2. Respuesta de salida del caso control.
 3. Respuesta de salida del caso patológico.
 4. Respuesta del caso patológico con el controlador PID.
+
 
 Las señales deben almacenarse para generar las gráficas comparativas correspondientes.
 
@@ -797,9 +768,11 @@ $$
 
 Donde:
 
-- \(e(t)\): error del sistema.
-- \(r(t)\): señal de referencia.
-- \(y(t)\): salida del sistema.
+
+- $e(t)$: error del sistema.
+- $r(t)$: señal de referencia.
+- $y(t)$: salida del sistema.
+
 
 En este modelo, la salida se retroalimenta para compararse con la señal de entrada y generar una señal de error.
 
@@ -807,15 +780,16 @@ En este modelo, la salida se retroalimenta para compararse con la señal de entr
 
 El controlador PID combina tres acciones de control:
 
-- \(K_p\): ganancia proporcional.
-- \(K_i\): ganancia integral.
-- \(K_d\): ganancia derivativa.
+
+- $K_p$: ganancia proporcional.
+- $K_i$: ganancia integral.
+- $K_d$: ganancia derivativa.
+
 
 La expresión general del controlador en el dominio del tiempo es:
 
 $$
-u(t)=K_p e(t)+K_i\int_0^t e(\tau)\,d\tau
-+K_d\frac{de(t)}{dt}
+u(t)=K_p e(t)+K_i\int_0^t e(\tau)\,d\tau+K_d\frac{de(t)}{dt}
 $$
 
 En el dominio de Laplace:
@@ -828,8 +802,7 @@ Para una retroalimentación negativa unitaria, la función de transferencia de l
 
 $$
 \boxed{
-T(s)=\frac{K(s)G(s)}{1+K(s)G(s)}
-}
+T(s)=\frac{K(s)G(s)}{1+K(s)G(s)}}
 $$
 
 ### 9.3. Sintonización del controlador
@@ -840,11 +813,13 @@ En MATLAB y Simulink se utiliza el bloque PID Controller para ajustar las gananc
 
 Los valores obtenidos deben registrarse en la siguiente tabla:
 
+
 | Ganancia | Valor obtenido |
 |---|---|
-| \(K_p\) | Registrar valor de la simulación |
-| \(K_i\) | Registrar valor de la simulación |
-| \(K_d\) | Registrar valor de la simulación |
+| $K_p$ | Registrar valor de la simulación |
+| $K_i$ | Registrar valor de la simulación |
+| $K_d$ | Registrar valor de la simulación |
+
 
 Las ganancias definitivas deben corresponder a las utilizadas en el modelo y comprobarse mediante las gráficas obtenidas.
 
@@ -864,14 +839,16 @@ El modelo eléctrico del sistema endocrino utiliza resistencias, inductores y ca
 
 Los componentes considerados son:
 
+
 | Componente | Función dentro del circuito |
 |---|---|
-| Resistencia \(R_1\) | Representa las pérdidas y oposición durante el transporte hormonal |
-| Inductor \(L\) | Representa la inercia o retardo de la respuesta |
-| Capacitor \(C\) | Representa la acumulación temporal de la hormona |
-| Resistencia \(R_2\) | Representa la utilización, disipación o eliminación hormonal |
-| Fuente \(V_e(t)\) | Representa el estímulo para la secreción hormonal |
-| Salida \(V_s(t)\) | Representa el nivel hormonal efectivo |
+| Resistencia $R_1$ | Representa las pérdidas y oposición durante el transporte hormonal |
+| Inductor $L$ | Representa la inercia o retardo de la respuesta |
+| Capacitor $C$ | Representa la acumulación temporal de la hormona |
+| Resistencia $R_2$ | Representa la utilización, disipación o eliminación hormonal |
+| Fuente $V_e(t)$ | Representa el estímulo para la secreción hormonal |
+| Salida $V_s(t)$ | Representa el nivel hormonal efectivo |
+
 
 La implementación analógica del controlador debe realizarse mediante el diseño correspondiente con amplificadores operacionales y los componentes calculados para las ganancias deseadas.
 
