@@ -453,7 +453,7 @@ e_{ss}=\frac{1}{1+100}
 $$
 
 $$
-\boxed{e_{ss}=0.0099\approx0.99\%}
+{e_{ss}=0.0099\approx0.99\%}
 $$
 
 **Caso patológico:**
@@ -475,7 +475,7 @@ e_{ss}=\frac{1}{1+1}
 $$
 
 $$
-\boxed{e_{ss}=0.5=50\%}
+e_{ss}=0.5=50\%}
 $$
 
 Los resultados muestran que el caso control presenta un error estacionario considerablemente menor que el caso patológico. Esto se relaciona con la diferencia entre las resistencias de salida de ambos modelos.
