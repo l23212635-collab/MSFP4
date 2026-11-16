@@ -286,8 +286,7 @@ $$
 Por lo tanto, la función de transferencia del sistema es:
 
 $$
-\boxed{
-G(s)=\frac{V_s(s)}{V_e(s)}=\frac{Ls+R_2}{R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)}}
+\boxed{G(s)=\frac{V_s(s)}{V_e(s)}=\frac{Ls+R_2}{R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)}}
 $$
 
 Donde:
@@ -320,8 +319,7 @@ $$
 Aplicando la transformada inversa de Laplace, considerando condiciones iniciales nulas, se obtiene:
 
 $$
-\boxed{
-R_1LC\frac{d^2V_s(t)}{dt^2}+(L+R_1R_2C)\frac{dV_s(t)}{dt}+(R_1+R_2)V_s(t)=L\frac{dV_e(t)}{dt}+R_2V_e(t)}
+\boxed{R_1LC\frac{d^2V_s(t)}{dt^2}+(L+R_1R_2C)\frac{dV_s(t)}{dt}+(R_1+R_2)V_s(t)=L\frac{dV_e(t)}{dt}+R_2V_e(t)}
 $$
 
 Esta ecuación diferencial ordinaria describe la relación dinámica entre la señal de entrada y la señal de salida del sistema endocrino.
@@ -493,8 +491,7 @@ $$
 Aplicando la fórmula general:
 
 $$
-\boxed{
-s_{1,2}=\frac{-(L+R_1R_2C)\pm\sqrt{(L+R_1R_2C)^2-4R_1LC(R_1+R_2)}}{2R_1LC}}
+\boxed{s_{1,2}=\frac{-(L+R_1R_2C)\pm\sqrt{(L+R_1R_2C)^2-4R_1LC(R_1+R_2)}}{2R_1LC}}
 $$
 
 Los polos permiten identificar la estabilidad y el comportamiento transitorio del sistema.
@@ -1101,40 +1098,49 @@ Los nombres siguientes representan una propuesta de organización y deben ajusta
 ---
 
 <a id="flujo"></a>
-## 13. Flujo de trabajo
 
-```mermaid
-flowchart TD
-    A[Descripción del sistema endocrino] --> B[Eje hipotálamo-hipófisis-suprarrenal]
-    B --> C[Analogía eléctrica RLC]
-    C --> D[Leyes de Kirchhoff]
-    D --> E[Ecuaciones integro-diferenciales]
-    E --> F[Función de transferencia]
-    F --> G[Representación mediante EDO]
-    F --> H[Error en estado estacionario]
-    F --> I[Polos y estabilidad]
-    G --> J[Simulink: modelo por ecuaciones]
-    F --> K[Simulink: función de transferencia]
-    C --> L[Simscape Electrical: circuito RLC]
-    J --> M[Respuesta en lazo abierto]
-    K --> M
-    L --> M
-    M --> N[Comparación control y caso]
-    F --> O[PID con retroalimentación negativa]
-    O --> P[Sintonización y respuesta en lazo cerrado]
-    F --> Q[Python: simulación independiente]
-    P --> Q
-    P --> R[Diseño de controlador analógico]
-    C --> S[Montaje del circuito RLC]
-    R --> T[Montaje experimental en lazo cerrado]
-    S --> U[Mediciones y capturas]
-    T --> U
-    N --> V[Verificación cruzada]
-    P --> V
-    Q --> V
-    U --> V
-    V --> W[Resultados y evidencias en GitHub]
+## Flujo de trabajo
+
+```text
+       Descripción del sistema endocrino
+                    |
+                    v
+          Analogía eléctrica RLC
+                    |
+                    v
+       Desarrollo del modelo matemático
+                    |
+                    v
+    Obtención de la función de transferencia
+                    |
+                    v
+    Definición de parámetros y señal de entrada
+                    |
+                    v
+                  MATLAB
+                    |
+                    v
+                 Simulink
+                    |
+                    v
+       Análisis del caso control y patológico
+                    |
+                    v
+          Diseño del controlador PID
+                    |
+                    v
+          Simulación del sistema en lazo cerrado
+                    |
+                    v
+           Reproducción del modelo en Python
+                    |
+                    v
+       Comparación y análisis de resultados
+                    |
+                    v
+              Conclusiones finales
 ```
+
 
 El flujo integra la descripción fisiológica, la formulación matemática, la simulación computacional, el análisis de control y la documentación de los resultados.
 
