@@ -67,7 +67,7 @@ A partir del circuito equivalente se desarrollan las ecuaciones integro-diferenc
 
 Finalmente, se estudia la respuesta temporal mediante MATLAB, Simulink, Simscape Electrical y Python. También se contempla la incorporación de un controlador PID para modificar el comportamiento del caso patológico y comparar los resultados obtenidos.
 
-**Palabras clave:** sistema endocrino; eje hipotálamo-hipófisis-suprarrenal; cortisol; CRH; ACTH; circuito RLC; función de transferencia; estabilidad; controlador PID; MATLAB; Simulink; Python.
+**Palabras clave:** Hormonas; Glándulas endocrinas; Regulación metabólica; Homeostasis; Retroalimentación hormonal.
 
 [Volver al contenido](#contenido)
 
