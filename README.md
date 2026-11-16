@@ -452,8 +452,9 @@ $$
 e_{ss}=\frac{1}{1+100}
 $$
 
+
 $$
-{e_{ss}=0.0099\approx0.99\%}
+e_{ss}=0.0099\approx 0.99\%
 $$
 
 **Caso patológico:**
@@ -885,44 +886,6 @@ C_caso = 1000e-6
 t = np.arange(0, 10.001, 1e-3)
 ```
 
-### 10.2. Construcción de las funciones de transferencia
-
-```python
-# Caso control
-num_control = [L_control, R2_control]
-
-den_control = [
-    R1_control * L_control * C_control,
-    L_control + R1_control * R2_control * C_control,
-    R1_control + R2_control
-]
-
-sys_control = ctrl.tf(num_control, den_control)
-
-# Caso patológico
-num_caso = [L_caso, R2_caso]
-
-den_caso = [
-    R1_caso * L_caso * C_caso,
-    L_caso + R1_caso * R2_caso * C_caso,
-    R1_caso + R2_caso
-]
-
-sys_caso = ctrl.tf(num_caso, den_caso)
-```
-
-### 10.3. Cálculo de polos
-
-```python
-polos_control = ctrl.poles(sys_control)
-polos_caso = ctrl.poles(sys_caso)
-
-print("Polos del caso control:")
-print(polos_control)
-
-print("Polos del caso patológico:")
-print(polos_caso)
-```
 
 ### 10.4. Respuesta del sistema
 
