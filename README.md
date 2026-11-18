@@ -1301,17 +1301,6 @@ El siguiente diagrama representa el funcionamiento del eje hipotálamo-hipófisi
 
 ![Diagrama del sistema endocrino](Sistema%20endocrino.png)
 
-### Representación del modelo
-
-Agregar en esta sección la imagen elaborada en BioRender o el diagrama fisiológico del sistema endocrino.
-
-Ejemplo de enlace para GitHub:
-
-```markdown
-![Modelo fisiológico del sistema endocrino](Evidencias/Modelo_Endocrino.png)
-```
-
-La imagen debe permitir identificar la relación entre el eje endocrino y su representación mediante el circuito eléctrico equivalente.
 
 [Volver al contenido](#contenido)
 
