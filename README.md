@@ -1029,6 +1029,7 @@ A continuación, se presentan los archivos que conforman el proyecto, incluyendo
 |---|---|
 | Análisis matemático del sistema endocrino | `Análisis Matematico Sistema Endocrino .pdf` |
 | Circuito del osciloscopio | `Circuito Osciloscopio.bmp` |
+| Circuito Electronico | `Circuito Electroico.jpeg` |
 | Resultados del control del caso en Python | `Control_caso_python4.pdf` |
 | Comparación del control y el caso | `Control_y_Caso.pdf` |
 | Imagen del controlador PID | `Controlador PID_4.jpeg` |
