@@ -1020,14 +1020,6 @@ Ambos modelos son estables debido a que sus polos se encuentran en el semiplano 
 
 La comparación permite observar cómo los cambios en los parámetros eléctricos modifican la respuesta del sistema y representan diferentes condiciones de funcionamiento del modelo endocrino.
 
-### 12.3. Convención de colores para las gráficas
-
-Se recomienda conservar una convención de colores uniforme:
-
-- **Azul:** señal de entrada \(V_e(t)\).
-- **Amarillo:** respuesta de salida del caso control.
-- **Rojo:** respuesta de salida del caso patológico.
-- **Verde:** respuesta del caso patológico con PID.
 
 ### 12.4. Archivos de resultados
 
