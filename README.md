@@ -642,7 +642,7 @@ La configuración de referencia utilizada para el análisis considera:
 | Tiempo inicial | 0 s |
 | Tiempo final | 10 s |
 | Solver | `ode15s` |
-| Paso máximo de referencia | \(1\times10^{-3}\) s |
+| Paso máximo | $1\times10^{-3}$ s |
 | Condiciones iniciales | Cero |
 
 El paso máximo debe revisarse de acuerdo con las escalas temporales del circuito, debido a que los polos presentan magnitudes muy diferentes.
