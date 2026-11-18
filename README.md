@@ -887,13 +887,13 @@ t = np.arange(0, 10.001, 1e-3)
 ```
 
 
-### 10.4. Respuesta del sistema
+### 10.2. Respuesta del sistema
 
 La respuesta del sistema se calcula utilizando las funciones de transferencia y las señales de entrada definidas para la simulación.
 
 Se deben obtener las respuestas correspondientes al caso control y al caso patológico, manteniendo los mismos parámetros temporales.
 
-### 10.5. Controlador PID
+### 10.3. Controlador PID
 
 Para reproducir el comportamiento del sistema con PID se utilizan las ganancias obtenidas durante la sintonización en MATLAB y Simulink.
 
@@ -909,7 +909,7 @@ $$
 T(s)=\frac{K(s)G(s)}{1+K(s)G(s)}
 $$
 
-### 10.6. Gráficas
+### 10.4. Gráficas
 
 El programa debe generar las figuras necesarias para observar:
 
@@ -1021,7 +1021,7 @@ Ambos modelos son estables debido a que sus polos se encuentran en el semiplano 
 La comparación permite observar cómo los cambios en los parámetros eléctricos modifican la respuesta del sistema y representan diferentes condiciones de funcionamiento del modelo endocrino.
 
 
-### 12.4. Archivos de resultados
+### 12.3. Archivos de resultados
 
 A continuación, se presentan los archivos que conforman el proyecto, incluyendo documentos de análisis, resultados de control, imágenes, modelos de simulación y códigos fuente utilizados para el desarrollo de los sistemas:
 
@@ -1038,7 +1038,7 @@ A continuación, se presentan los archivos que conforman el proyecto, incluyendo
 | Código de simulación del sistema endocrino en Python | `SistemaEndocrino.py` |
 | Modelo de Simulink | `Sistemaaa4.slx` |
 
-### 12.5. Aspectos para discutir
+### 12.4. Aspectos para discutir
 
 - Diferencias entre los parámetros eléctricos del caso control y patológico.
 - Efecto del incremento de la capacitancia sobre la respuesta temporal.
