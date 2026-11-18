@@ -1031,17 +1031,20 @@ Se recomienda conservar una convención de colores uniforme:
 
 ### 12.4. Archivos de resultados
 
-Los nombres siguientes representan una propuesta de organización y deben ajustarse a los archivos reales del repositorio.
+A continuación, se presentan los archivos que conforman el proyecto, incluyendo documentos de análisis, resultados de control, imágenes, modelos de simulación y códigos fuente utilizados para el desarrollo de los sistemas:
 
-| Resultado | Archivo sugerido |
+| Resultado | Archivo |
 |---|---|
-| Análisis matemático | `Analisis_Matematico_Endocrino.pdf` |
-| Comparación control y caso | `Control_vs_Caso.pdf` |
-| Respuesta con PID | `Endocrino_Control_Caso_PID.pdf` |
-| Modelo fisiológico | `Sistema_Endocrino.png` |
-| Modelo de Simulink | `Sistema_Endocrino.slx` |
-| Simulación en MATLAB | `Practica4_Endocrino.mlx` |
-| Simulación en Python | `Practica4_Endocrino.py` |
+| Análisis matemático del sistema endocrino | `Análisis Matematico Sistema Endocrino .pdf` |
+| Circuito del osciloscopio | `Circuito Osciloscopio.bmp` |
+| Resultados del control del caso en Python | `Control_caso_python4.pdf` |
+| Comparación del control y el caso | `Control_y_Caso.pdf` |
+| Imagen del controlador PID | `Controlador PID_4.jpeg` |
+| Código de simulación en MATLAB | `Perez23212635_4.m` |
+| Documento de resultados de la práctica 4 | `Perez23212635_4.pdf` |
+| Modelo del sistema endocrino | `Sistema endocrino.png` |
+| Código de simulación del sistema endocrino en Python | `SistemaEndocrino.py` |
+| Modelo de Simulink | `Sistemaaa4.slx` |
 
 ### 12.5. Aspectos para discutir
 
@@ -1294,17 +1297,9 @@ Los resultados deben corresponder a las simulaciones y evidencias efectivamente 
 <a id="diagrama-del-sistema-endocrino"></a>
 ## 18. Diagrama del sistema endocrino
 
-El sistema fisiológico utilizado como referencia corresponde al eje hipotálamo-hipófisis-suprarrenal.
+El siguiente diagrama representa el funcionamiento del eje hipotálamo-hipófisis-suprarrenal, encargado de regular la producción y liberación de cortisol en el organismo. Se muestra la interacción entre el hipotálamo, la hipófisis anterior y las glándulas suprarrenales, así como el mecanismo de retroalimentación negativa que permite controlar los niveles hormonales. Además, se presenta una comparación entre el funcionamiento normal del sistema (caso control) y una condición patológica de hipercortisolismo, en la que existe una mayor concentración de cortisol y una disminución en la sensibilidad de la retroalimentación negativa.
 
-Su representación contempla:
-
-- Hipotálamo y liberación de CRH.
-- Hipófisis anterior y liberación de ACTH.
-- Glándula suprarrenal y producción de cortisol.
-- Órganos diana y respuesta fisiológica.
-- Mecanismo de retroalimentación negativa.
-- Correspondencia entre las variables fisiológicas y los componentes eléctricos RLC.
-- Comparación entre el caso control y el caso patológico.
+![Diagrama del sistema endocrino](Sistema%20endocrino.png)
 
 ### Representación del modelo
 
